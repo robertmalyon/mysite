@@ -7,6 +7,10 @@ def home(request):
     return render(request, 'blog/home.html')
 
 
+def animated_me(request):
+    return render(request, 'blog/animated-me.html')
+
+
 class PostListView(ListView):
     model = Post
     template_name = 'blog/blog.html'  # <app>/<model>_<viewtype>.html
